@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <div class="heading">
+    <h1 >Transform your background, <br> transform your mood!</h1>
+    <button onclick="change_Color()">Color Me Up</button>
+    </div>
+    
+
+<script>
+ let color = ['blueviolet', 'green', 'crimson', 'steelblue', 'purple','midnightblue','mediumvioletred']; 
+ let currentIndex = 0; 
+ function change_Color() 
+ { 
+    document.body.style.backgroundColor = color[currentIndex];
+    currentIndex = (currentIndex + 1) % color.length; 
+ }
+</script>
+
+</body>
+</html>
